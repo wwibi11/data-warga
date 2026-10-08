@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-on-surface": "#eaf1ff", "surface-container-low": "#eff4ff", "on-primary-fixed": "#002115", "on-secondary-fixed": "#111c2d", "tertiary-fixed": "#cce5ff", "on-background": "#0b1c30", "on-secondary-fixed-variant": "#3c475a", "outline-variant": "#bdc9c1", "on-surface-variant": "#3e4943", "tertiary": "#005683", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#bcc7de", "secondary-container": "#d5e0f8", "surface-container-highest": "#d3e4fe", "on-secondary-container": "#586377", "on-secondary": "#ffffff", "on-tertiary": "#ffffff", "surface": "#f8f9ff", "on-tertiary-container": "#dbecff", "surface-tint": "#006c4e", "on-primary-container": "#9ffdd3", "error": "#ba1a1a", "primary-container": "#047857", "surface-container-high": "#dce9ff", "surface-bright": "#f8f9ff", "primary-fixed-dim": "#7bd8b1", "surface-variant": "#d3e4fe", "inverse-primary": "#7bd8b1", "tertiary-container": "#006fa8", "on-primary": "#ffffff", "on-surface": "#0b1c30", "surface-container": "#e5eeff", "inverse-surface": "#213145", "on-error-container": "#93000a", "primary-fixed": "#97f5cc", "secondary": "#545f73", "on-tertiary-fixed": "#001d31", "tertiary-fixed-dim": "#93ccff", "outline": "#6e7a73", "on-primary-fixed-variant": "#00513a", "background": "#f8f9ff", "secondary-fixed": "#d8e3fb", "on-tertiary-fixed-variant": "#004b73", "primary": "#005d42", "surface-dim": "#cbdbf5", "error-container": "#ffdad6", "on-error": "#ffffff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1rem", "space-md": "0.75rem", "space-sm": "0.5rem", "space-xl": "2rem", "space-lg": "1.25rem", "margin": "1rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "margin-desktop": "2rem" }, "fontFamily": { "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "tabular-data": ["Inter"], "display-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-lg": ["Inter"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Inter"], "label-sm": ["Inter"], "body-md": ["Plus Jakarta Sans"] }, "fontSize": { "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "tabular-data": ["13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "500" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-lg": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "label-md": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.04em", "fontWeight": "700" }], "body-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-72 bg-inverse-surface text-inverse-on-surface z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-inverse-surface"><img alt="Logo SIMPEL DESA" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDREC-tp2aMxHlNvHJuyESm9uIgYRfX1GxIXev00dwLf6eNXYRBxioxy5jXJ66oTQVDuZoI2iQB7mEfmvvs858mtlcwfMjiWBREXhP7nFgfINWApzoYOLtKEOFeg6sPmcn3WlvrO3Q5B3RJBdXu07HNQvr4emgT9T-rKKY73bSkwVa6bUP1Q7LrUke1UgO4OTyhsP3xp2ai4Tw-1NIOL-dtRnUVati0qLOaYuc7ONA"/><div class="flex flex-col min-w-0 leading-none"><span class="font-headline-sm text-headline-sm text-inverse-on-surface tracking-tight truncate">SIMPEL DESA</span><span class="font-label-sm text-label-sm text-outline-variant uppercase tracking-wider truncate">Pemerintah Desa Sukamaju</span></div></div><div class="px-space-md py-space-xs bg-inverse-surface"><div class="bg-surface-container-low/10 rounded-lg p-space-sm flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs min-w-0"><span class="material-symbols-outlined text-primary-fixed text-headline-sm">location_city</span><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-outline-variant uppercase">Wilayah Aktif</span><span class="font-label-md text-label-md text-inverse-on-surface truncate">Semua Dusun (I, II, III)</span></div></div><span class="material-symbols-outlined text-outline-variant text-body-sm">expand_more</span></div></div><nav class="flex-1 px-space-sm py-space-sm overflow-y-auto space-y-space-md" data-active-classes="bg-primary text-on-primary font-semibold"><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline-variant">Utama</div><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-outline-variant hover:bg-surface-container-high/15 hover:text-inverse-on-surface transition-colors" data-path="dashboard-dan-analitik" href="#"><span class="material-symbols-outlined text-body-lg">analytics</span><span class="flex-1 font-label-lg text-label-lg truncate">Dashboard & Analitik</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-outline-variant hover:bg-surface-container-high/15 hover:text-inverse-on-surface transition-colors" data-path="monitoring-wilayah" href="#"><span class="material-symbols-outlined text-body-lg">map</span><span class="flex-1 font-label-lg text-label-lg truncate">Monitoring Wilayah</span></a></div><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline-variant">Kependudukan</div><a class="flex items-center justify-between px-space-sm py-space-xs rounded text-outline-variant hover:bg-surface-container-high/15 hover:text-inverse-on-surface transition-colors" data-path="data-penduduk-dan-nik" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="material-symbols-outlined text-body-lg">badge</span><span class="font-label-lg text-label-lg truncate">Data Penduduk & NIK</span></div><span class="px-space-xs py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">32</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-outline-variant hover:bg-surface-container-high/15 hover:text-inverse-on-surface transition-colors" data-path="kartu-keluarga" href="#"><span class="material-symbols-outlined text-body-lg">groups</span><span class="flex-1 font-label-lg text-label-lg truncate">Kartu Keluarga</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-outline-variant hover:bg-surface-container-high/15 hover:text-inverse-on-surface transition-colors" data-path="mutasi-dan-peristiwa" href="#"><span class="material-symbols-outlined text-body-lg">swap_horiz</span><span class="flex-1 font-label-lg text-label-lg truncate">Mutasi & Peristiwa</span></a></div><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline-variant">Layanan & Pelayanan</div><a class="flex items-center justify-between px-space-sm py-space-xs rounded text-outline-variant hover:bg-surface-container-high/15 hover:text-inverse-on-surface transition-colors" data-path="antrean-persuratan" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="material-symbols-outlined text-body-lg">mark_email_unread</span><span class="font-label-lg text-label-lg truncate">Antrean Persuratan</span></div><span class="px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">14</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-outline-variant hover:bg-surface-container-high/15 hover:text-inverse-on-surface transition-colors" data-path="bantuan-sosial" href="#"><span class="material-symbols-outlined text-body-lg">volunteer_activism</span><span class="flex-1 font-label-lg text-label-lg truncate">Bantuan Sosial (Bansos)</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-outline-variant hover:bg-surface-container-high/15 hover:text-inverse-on-surface transition-colors" data-path="buku-kas-dan-iuran" href="#"><span class="material-symbols-outlined text-body-lg">payments</span><span class="flex-1 font-label-lg text-label-lg truncate">Buku Kas & Iuran</span></a></div><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline-variant">Sistem & Keamanan</div><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-outline-variant hover:bg-surface-container-high/15 hover:text-inverse-on-surface transition-colors" data-path="role-user-dan-scope" href="#"><span class="material-symbols-outlined text-body-lg">admin_panel_settings</span><span class="flex-1 font-label-lg text-label-lg truncate">Role, User & Scope</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-outline-variant hover:bg-surface-container-high/15 hover:text-inverse-on-surface transition-colors" data-path="feature-toggle" href="#"><span class="material-symbols-outlined text-body-lg">toggle_on</span><span class="flex-1 font-label-lg text-label-lg truncate">Feature Toggle</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-outline-variant hover:bg-surface-container-high/15 hover:text-inverse-on-surface transition-colors" data-path="log-audit-dan-keamanan" href="#"><span class="material-symbols-outlined text-body-lg">security</span><span class="flex-1 font-label-lg text-label-lg truncate">Log Audit & Keamanan</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-outline-variant hover:bg-surface-container-high/15 hover:text-inverse-on-surface transition-colors" data-path="pengaturan-sistem" href="#"><span class="material-symbols-outlined text-body-lg">settings</span><span class="flex-1 font-label-lg text-label-lg truncate">Pengaturan Sistem</span></a></div></nav><div class="p-space-sm bg-surface-container-low/5"><div class="flex items-center justify-between text-outline-variant px-space-sm py-space-xs"><span class="font-label-sm text-label-sm">SIMPEL DESA v4.2</span><span class="material-symbols-outlined text-body-sm hover:text-inverse-on-surface cursor-pointer">help_outline</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40"><div class="h-16 w-full px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-low rounded-lg"><span class="material-symbols-outlined text-primary text-body-md">shield</span><span class="font-label-md text-label-md text-on-surface">Kec. Cilodong</span><span class="text-outline text-body-sm">/</span><span class="font-label-md text-label-md text-primary font-semibold">Desa Sukamaju</span></div><div class="relative flex-1"><span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-on-surface-variant text-body-md">search</span><input class="w-full h-9 pl-9 pr-space-sm rounded-lg bg-surface-container-lowest font-body-sm text-body-sm text-on-surface placeholder:text-outline-variant focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Cari NIK, No. KK, Nama Warga, atau Nomor Registrasi..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button class="relative p-space-xs rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-headline-sm">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error"></span></button><button class="p-space-xs rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-headline-sm">sync</span></button></div><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw8SYd4aWMhRKo8DUBPlqEw3RBDEgvyYE7nJMihwkLQkWqNcxwwKSGIaF7kg76EI_jZoxTV--VnCbodnHv_wa_E_W3XND9c9gyOa_lGG7RXW2MYnescrcYWtFASdy99BI5U6xYZbQOylCp1zi1boH440MICjbe1S8zPwQeoSm1YtNIOF6uMnn5mLC6laBWCKnYBnEsafnGFEXFT4NyttZBgwfKTbIknhTZUED_qwI"/><div class="flex flex-col leading-tight"><span class="font-label-lg text-label-lg text-on-surface truncate">Sri Rahayu, S.AP</span><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Sekretaris Desa / Super Admin</span></div></div><button class="p-space-xs text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined text-body-md">keyboard_arrow_down</span></button></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="w-full px-gutter-desktop py-space-lg"><div class="flex flex-col w-full gap-space-lg">
+<!-- Top Territorial Breadcrumb Ribbon & Security Status Banner -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-primary text-body-md" style="font-variation-settings: 'FILL' 1;">security</span>
+<span class="font-label-md text-label-md">Lingkup Keamanan Tingkat Tinggi</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span>Prov. Jawa Barat</span>
+<span class="material-symbols-outlined text-body-sm">chevron_right</span>
+<span>Kab. Cilodong</span>
+<span class="material-symbols-outlined text-body-sm">chevron_right</span>
+<span class="text-primary font-semibold">Pemerintah Desa Sukamaju</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-bold uppercase tracking-wider">
+          Enkripsi AES-256 Aktif
+        </span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>Kepatuhan UU No. 27/2022 (PDP) Terverifikasi</span>
+</div>
+<button class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg hover:opacity-90 transition-opacity shadow-sm">
+<span class="material-symbols-outlined text-body-md">lock_reset</span>
+<span>Deploy Kebijakan Baru</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Page Header Title Area -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="space-y-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-body-sm">admin_panel_settings</span>
+<span>MODUL ADMINISTRATOR INTI • SIMPEL DESA v4.2</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">Hak Akses, Scope Wilayah & Feature Toggle</h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Konfigurasi granular peranan pengguna, hak akses pembatasan wilayah RT/RW, dan aktivasi modul aplikasi per role (Super Admin, Admin Wilayah, Warga) dengan jaminan kepatuhan perlindungan data pribadi kependudukan.
+      </p>
+</div>
+<!-- Quick Stats Bento Strip -->
+<div class="flex items-center gap-space-sm bg-surface-container-low p-space-sm rounded-xl">
+<div class="px-space-md py-space-xs rounded-lg bg-surface-container-lowest text-center shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Total Modul</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">10 / 10</span>
+</div>
+<div class="px-space-md py-space-xs rounded-lg bg-surface-container-lowest text-center shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Operator Aktif</span>
+<span class="font-headline-md text-headline-md text-tertiary font-bold">28 Akun</span>
+</div>
+<div class="px-space-md py-space-xs rounded-lg bg-surface-container-lowest text-center shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Pelanggaran PDP</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">0 Kasus</span>
+</div>
+</div>
+</div>
+<!-- Segmented Tabs Navigation -->
+<div class="flex border-none bg-surface-container-high/40 p-1.5 rounded-xl gap-1">
+<button class="flex-1 flex items-center justify-center gap-space-xs py-space-sm px-space-md rounded-lg font-label-lg text-label-lg bg-surface-container-lowest text-on-surface shadow-xs transition-all" id="tabBtn1" onclick="switchTab(1)">
+<span class="material-symbols-outlined text-body-md text-primary">toggle_on</span>
+<span>Matriks Feature Toggle per Role</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant text-label-sm font-bold">10 Fitur</span>
+</button>
+<button class="flex-1 flex items-center justify-center gap-space-xs py-space-sm px-space-md rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" id="tabBtn2" onclick="switchTab(2)">
+<span class="material-symbols-outlined text-body-md">manage_accounts</span>
+<span>Manajemen Akun Admin & Scope Wilayah</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-label-sm font-semibold">28 Operator</span>
+</button>
+<button class="flex-1 flex items-center justify-center gap-space-xs py-space-sm px-space-md rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" id="tabBtn3" onclick="switchTab(3)">
+<span class="material-symbols-outlined text-body-md">verified_user</span>
+<span>Log Audit Keamanan & Kepatuhan UU PDP</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-label-sm font-semibold">Real-time</span>
+</button>
+</div>
+<!-- Tab 1: Feature Matrix Content -->
+<div class="flex flex-col gap-space-lg" id="tabContent1">
+<!-- Notice Bar for Feature Policy -->
+<div class="flex items-center justify-between gap-space-md p-space-md rounded-xl bg-surface-container-low text-on-surface">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-headline-sm mt-0.5">info</span>
+<div>
+<span class="font-label-lg text-label-lg font-bold block text-on-surface">Prinsip Keamanan Peranan (Least Privilege Architecture)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Perubahan toggle langsung diterapkan pada sesi pengguna aktif dalam waktu maksimal 120 detik. Hak akses Super Admin tidak dapat dimatikan demi stabilitas kernel sistem.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors shadow-xs">
+          Pulihkan Default
+        </button>
+<button class="px-space-sm py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:opacity-90 transition-opacity shadow-xs">
+          Simpan Seluruh Kebijakan
+        </button>
+</div>
+</div>
+<!-- The Granular Matrix Table -->
+<div class="overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface">
+<th class="py-space-md px-space-lg font-label-md text-label-md uppercase tracking-wider text-on-surface-variant w-12 text-center">No</th>
+<th class="py-space-md px-space-lg font-label-md text-label-md uppercase tracking-wider text-on-surface-variant min-w-[240px]">Modul Sistem</th>
+<th class="py-space-md px-space-lg font-label-md text-label-md uppercase tracking-wider text-on-surface-variant min-w-[280px]">Keterangan Hak & Dasar Hukum</th>
+<th class="py-space-md px-space-md font-label-md text-label-md uppercase tracking-wider text-center text-on-surface min-w-[150px] bg-primary/10">
+<div class="flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-primary text-body-md">shield_person</span>
+<span>Super Admin</span>
+</div>
+</th>
+<th class="py-space-md px-space-md font-label-md text-label-md uppercase tracking-wider text-center text-on-surface min-w-[210px] bg-tertiary-container/10">
+<div class="flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-tertiary text-body-md">holiday_village</span>
+<span>Admin Wilayah (RT/RW)</span>
+</div>
+</th>
+<th class="py-space-md px-space-md font-label-md text-label-md uppercase tracking-wider text-center text-on-surface min-w-[190px] bg-secondary-container/20">
+<div class="flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-secondary text-body-md">person</span>
+<span>Warga Terverifikasi</span>
+</div>
+</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-transparent font-body-sm text-body-sm text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-sm px-space-lg text-center font-tabular-data text-tabular-data text-on-surface-variant">01</td>
+<td class="py-space-sm px-space-lg">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-headline-sm">fingerprint</span>
+<div>
+<span class="font-label-lg text-label-lg font-semibold block text-on-surface">Autentikasi & Verifikasi NIK KTP</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Integrasi SIAK Ditjen Dukcapil Kemendagri</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-lg text-on-surface-variant">
+                Validasi identitas biometrik dan NIK 16-digit real-time; wajib enkripsi end-to-end.
+              </td>
+<td class="py-space-sm px-space-md text-center bg-primary/5">
+<div class="inline-flex items-center gap-1 px-space-xs py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-body-sm">lock</span>
+<span>Full Locked</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-center bg-tertiary-container/5">
+<div class="flex items-center justify-center gap-2">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-outline-variant after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="px-1.5 py-0.5 rounded text-label-sm font-semibold bg-tertiary-fixed text-on-tertiary-fixed">Approve</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-center bg-secondary-container/10">
+<div class="flex items-center justify-center gap-2">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-outline-variant after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mandiri (OCR)</span>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors bg-surface-container-low/20">
+<td class="py-space-sm px-space-lg text-center font-tabular-data text-tabular-data text-on-surface-variant">02</td>
+<td class="py-space-sm px-space-lg">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-headline-sm">insights</span>
+<div>
+<span class="font-label-lg text-label-lg font-semibold block text-on-surface">Dashboard Analitik & Demografi</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Piramida penduduk, status kerja, stunting</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-lg text-on-surface-variant">
+                Visualisasi spasial dan statistik agregat desa tanpa membuka NIK individual ke publik.
+              </td>
+<td class="py-space-sm px-space-md text-center bg-primary/5">
+<div class="inline-flex items-center gap-1 px-space-xs py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-body-sm">lock</span>
+<span>Full Locked</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-center bg-tertiary-container/5">
+<div class="flex items-center justify-center gap-2">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-outline-variant after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="px-1.5 py-0.5 rounded text-label-sm font-semibold bg-surface-container-highest text-on-surface">Read (Scope)</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-center bg-secondary-container/10">
+<div class="flex items-center justify-center gap-2">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-outline-variant after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="font-label-sm text-label-sm text-primary font-bold">Ringkasan Publik</span>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-sm px-space-lg text-center font-tabular-data text-tabular-data text-on-surface-variant">03</td>
+<td class="py-space-sm px-space-lg">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-headline-sm">badge</span>
+<div>
+<span class="font-label-lg text-label-lg font-semibold block text-on-surface">Master Data Kependudukan & NIK</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Filter RW 01, RW 02, RW 03 aktif</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-lg text-on-surface-variant">
+                Akses buku induk kependudukan lengkap dengan data privasi sensitif (UU PDP Pasal 4).
+              </td>
+<td class="py-space-sm px-space-md text-center bg-primary/5">
+<div class="inline-flex items-center gap-1 px-space-xs py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-body-sm">lock</span>
+<span>Full Locked</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-center bg-tertiary-container/5">
+<div class="flex items-center justify-center gap-2">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-outline-variant after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="px-1.5 py-0.5 rounded text-label-sm font-semibold bg-tertiary-fixed text-on-tertiary-fixed">Write (Scope)</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-center bg-secondary-container/10">
+<div class="flex items-center justify-center gap-2">
+<label class="relative inline-flex items-center cursor-not-allowed opacity-60">
+<input class="sr-only peer" disabled="" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high peer-focus:outline-none rounded-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4"></div>
+</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Terkunci (Hanya Profil Mandiri)</span>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors bg-surface-container-low/20">
+<td class="py-space-sm px-space-lg text-center font-tabular-data text-tabular-data text-on-surface-variant">04</td>
+<td class="py-space-sm px-space-lg">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-headline-sm">family_restroom</span>
+<div>
+<span class="font-label-lg text-label-lg font-semibold block text-on-surface">Kartu Keluarga & Anggota (Pecah/Gabung)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Manajemen silsilah & relasi kepala keluarga</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-lg text-on-surface-variant">
+                Pencatatan mutasi internal keluarga, pembaharuan status pernikahan, dan akta anak.
+              </td>
+<td class="py-space-sm px-space-md text-center bg-primary/5">
+<div class="inline-flex items-center gap-1 px-space-xs py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-body-sm">lock</span>
+<span>Full Locked</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-center bg-tertiary-container/5">
+<div class="flex items-center justify-center gap-2">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-outline-variant after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="px-1.5 py-0.5 rounded text-label-sm font-semibold bg-tertiary-fixed text-on-tertiary-fixed">Write / Draft</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-center bg-secondary-container/10">
+<div class="flex items-center justify-center gap-2">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-outline-variant after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ajukan Pecah KK</span>
+</div>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-sm px-space-lg text-center font-tabular-data text-tabular-data text-on-surface-variant">05</td>
+<td class="py-space-sm px-space-lg">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-headline-sm">file_download</span>
+<div>
+<span class="font-label-lg text-label-lg font-semibold block text-on-surface">Import & Export Data Massal</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Format spreadsheet Excel / CSV ber-watermark</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-lg text-on-surface-variant">
+                Ekspor basis data mentah dengan watermark NIK pemohon dan audit IP ketat.
+              </td>
+<td class="py-space-sm px-space-md text-center bg-primary/5">
+<div class="inline-flex items-center gap-1 px-space-xs py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-body-sm">lock</span>
+<span>Full Locked</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-center bg-tertiary-container/5">
+<div class="flex items-center justify-center gap-2">
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-outline-variant after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="px-1.5 py-0.5 rounded text-label-sm font-semibold bg-error-container text-on-error-container">Nonaktif</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-center bg-secondary-container/10">
+<div class="flex items-center justify-center gap-2">
+<label class="relative inline-flex items-center cursor-not-allowed opacity-60">
+<input class="sr-only peer" disabled="" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high peer-focus:outline-none rounded-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4"></div>
+</label>
+<span class="font-label-sm text-label-sm text-error font-semibold">Dilarang Keras</span>
+</div>
+</td>
+</tr>
+<!-- Row 6 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors bg-surface-container-low/20">
+<td class="py-space-sm px-space-lg text-center font-tabular-data text-tabular-data text-on-surface-variant">06</td>
+<td class="py-space-sm px-space-lg">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-headline-sm">assignment_turned_in</span>
+<div>
+<span class="font-label-lg text-label-lg font-semibold block text-on-surface">Layanan & Antrean Persuratan</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SKCK, SKU, Ket. Domisili, TTE QR-Code</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-lg text-on-surface-variant">
+                Pembuatan, penerbitan tanda tangan elektronik desa, serta pelacakan surat keluar.
+              </td>
+<td class="py-space-sm px-space-md text-center bg-primary/5">
+<div class="inline-flex items-center gap-1 px-space-xs py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-body-sm">lock</span>
+<span>Full Locked</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-center bg-tertiary-container/5">
+<div class="flex items-center justify-center gap-2">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-outline-variant after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="px-1.5 py-0.5 rounded text-label-sm font-semibold bg-tertiary-fixed text-on-tertiary-fixed">Paraf / Verifikasi</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-center bg-secondary-container/10">
+<div class="flex items-center justify-center gap-2">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-outline-variant after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Pengajuan Mandiri</span>
+</div>
+</td>
+</tr>
+<!-- Row 7 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-sm px-space-lg text-center font-tabular-data text-tabular-data text-on-surface-variant">07</td>
+<td class="py-space-sm px-space-lg">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-headline-sm">account_balance_wallet</span>
+<div>
+<span class="font-label-lg text-label-lg font-semibold block text-on-surface">Buku Kas & Catatan Iuran RT/RW</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Iuran sampah, keamanan, dana sosial rukun warga</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-lg text-on-surface-variant">
+                Pencatatan pembukuan kas level lingkungan untuk akuntabilitas berkala kepada warga.
+              </td>
+<td class="py-space-sm px-space-md text-center bg-primary/5">
+<div class="inline-flex items-center gap-1 px-space-xs py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-body-sm">lock</span>
+<span>Full Locked</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-center bg-tertiary-container/5">
+<div class="flex items-center justify-center gap-2">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-outline-variant after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="px-1.5 py-0.5 rounded text-label-sm font-semibold bg-tertiary-fixed text-on-tertiary-fixed">Full Entry & Audit</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-center bg-secondary-container/10">
+<div class="flex items-center justify-center gap-2">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-outline-variant after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="font-label-sm text-label-sm text-primary font-bold">Transparansi Laporan</span>
+</div>
+</td>
+</tr>
+<!-- Row 8 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors bg-surface-container-low/20">
+<td class="py-space-sm px-space-lg text-center font-tabular-data text-tabular-data text-on-surface-variant">08</td>
+<td class="py-space-sm px-space-lg">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-headline-sm">volunteer_activism</span>
+<div>
+<span class="font-label-lg text-label-lg font-semibold block text-on-surface">Bantuan Sosial & Verifikasi Penerima</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">DTKS, BLT Dana Desa, PKH, BPNT</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-lg text-on-surface-variant">
+                Skoring desil kemiskinan dan penentuan validitas KPM (Keluarga Penerima Manfaat).
+              </td>
+<td class="py-space-sm px-space-md text-center bg-primary/5">
+<div class="inline-flex items-center gap-1 px-space-xs py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-body-sm">lock</span>
+<span>Full Locked</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-center bg-tertiary-container/5">
+<div class="flex items-center justify-center gap-2">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-outline-variant after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="px-1.5 py-0.5 rounded text-label-sm font-semibold bg-tertiary-fixed text-on-tertiary-fixed">Usulan & Survey</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-center bg-secondary-container/10">
+<div class="flex items-center justify-center gap-2">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-outline-variant after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cek Status Bansos Pribadi</span>
+</div>
+</td>
+</tr>
+<!-- Row 9 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-sm px-space-lg text-center font-tabular-data text-tabular-data text-on-surface-variant">09</td>
+<td class="py-space-sm px-space-lg">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-headline-sm">contact_support</span>
+<div>
+<span class="font-label-lg text-label-lg font-semibold block text-on-surface">Laporan Pengaduan & Ticketing Keluhan</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Infrastruktur jalan, lampu, sampah, darurat</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-lg text-on-surface-variant">
+                Pengelolaan aduan publik berjenjang, penugasan teknisi desa, dan SLA tindak lanjut.
+              </td>
+<td class="py-space-sm px-space-md text-center bg-primary/5">
+<div class="inline-flex items-center gap-1 px-space-xs py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-body-sm">lock</span>
+<span>Full Locked</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-center bg-tertiary-container/5">
+<div class="flex items-center justify-center gap-2">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-outline-variant after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="px-1.5 py-0.5 rounded text-label-sm font-semibold bg-tertiary-fixed text-on-tertiary-fixed">Eskalasi & Respond</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-center bg-secondary-container/10">
+<div class="flex items-center justify-center gap-2">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-outline-variant after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="font-label-sm text-label-sm text-primary font-bold">Kirim Keluhan</span>
+</div>
+</td>
+</tr>
+<!-- Row 10 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors bg-surface-container-low/20">
+<td class="py-space-sm px-space-lg text-center font-tabular-data text-tabular-data text-on-surface-variant">10</td>
+<td class="py-space-sm px-space-lg">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-headline-sm">dns</span>
+<div>
+<span class="font-label-lg text-label-lg font-semibold block text-on-surface">Pengaturan Sistem & Backup Database</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Snapshot PostgreSQL & Failover Cloud</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-lg text-on-surface-variant">
+                Konfigurasi parameter runtime, API Gateway Dukcapil, dan jadwal snapshot terenkripsi.
+              </td>
+<td class="py-space-sm px-space-md text-center bg-primary/5">
+<div class="inline-flex items-center gap-1 px-space-xs py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-body-sm">lock</span>
+<span>Full Locked</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-center bg-tertiary-container/5">
+<div class="flex items-center justify-center gap-2">
+<label class="relative inline-flex items-center cursor-not-allowed opacity-60">
+<input class="sr-only peer" disabled="" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high peer-focus:outline-none rounded-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4"></div>
+</label>
+<span class="px-1.5 py-0.5 rounded text-label-sm font-semibold bg-error-container text-on-error-container">Tidak Ada Akses</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-center bg-secondary-container/10">
+<div class="flex items-center justify-center gap-2">
+<label class="relative inline-flex items-center cursor-not-allowed opacity-60">
+<input class="sr-only peer" disabled="" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high peer-focus:outline-none rounded-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4"></div>
+</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tersembunyi</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Tab 2: Admin & Scope Wilayah Content (Hidden by default) -->
+<div class="hidden flex-col gap-space-lg" id="tabContent2">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Hierarki Wilayah & Penetapan Hak Kerja Operator</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Setiap operator hanya dapat melihat & mengedit data kependudukan sesuai rukun warga yang ditugaskan resmi.</p>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary text-on-primary font-label-lg text-label-lg hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-body-md">person_add</span>
+<span>Tambah Administrator Baru</span>
+</button>
+</div>
+</div>
+<!-- Tab 3: Security & PDP Compliance Content (Hidden by default) -->
+<div class="hidden flex-col gap-space-lg" id="tabContent3">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm">
+<h3 class="font-headline-md text-headline-md text-on-surface">Laporan Kepatuhan Perlindungan Data Pribadi (UU PDP No. 27/2022)</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Audit log disimpan dalam cold storage terenkripsi SHA-512 dengan retensi hukum minimal 5 tahun.</p>
+</div>
+</div>
+<!-- Panel Bawah: Daftar Pengguna Admin Aktif & Penugasan Scope Wilayah -->
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-headline-md">supervised_user_circle</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Pengguna Admin Aktif & Penugasan Scope Wilayah</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Status otentikasi ganda (2FA) dan delegasi wewenang kewilayahan</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="relative">
+<input class="h-9 pl-8 pr-3 rounded-lg bg-surface-container-lowest font-body-sm text-body-sm text-on-surface placeholder:text-outline-variant focus:outline-none focus:ring-1 focus:ring-primary shadow-xs" placeholder="Filter nama atau wilayah..." type="text"/>
+<span class="material-symbols-outlined absolute left-2.5 top-2 text-on-surface-variant text-body-md">search</span>
+</div>
+<button class="h-9 px-3 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center gap-1 shadow-xs">
+<span class="material-symbols-outlined text-body-md">filter_list</span>
+<span>Scope: Semua</span>
+</button>
+</div>
+</div>
+<!-- Active Admin Users Table -->
+<div class="overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface">
+<th class="py-space-md px-space-lg font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Nama Pengguna & Jabatan</th>
+<th class="py-space-md px-space-md font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Role Assigned</th>
+<th class="py-space-md px-space-md font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Scope Akses Wilayah</th>
+<th class="py-space-md px-space-md font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Status Akun</th>
+<th class="py-space-md px-space-md font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Terakhir Login</th>
+<th class="py-space-md px-space-lg font-label-md text-label-md uppercase tracking-wider text-right text-on-surface-variant">Tindakan Cepat</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-transparent font-body-sm text-body-sm text-on-surface">
+<!-- User 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-label-lg shadow-xs">
+                    BS
+                  </div>
+<div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">Bambang Sutrisno, S.Sos</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kasi Pelayanan Desa • NIP 19840211 200801 1 002</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-space-xs py-1 rounded bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm font-semibold">
+                  Operator Utama
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1 font-label-md text-label-md text-on-surface font-semibold">
+<span class="material-symbols-outlined text-primary text-body-md">domain</span>
+<span>Seluruh Desa Sukamaju (Dusun I, II, III)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-body-sm">verified_user</span>
+<span>Aktif (2FA FIDO2)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-tabular-data text-tabular-data text-on-surface-variant">
+                12 Menit yang lalu (103.84.21.90)
+              </td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-space-sm py-1 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-body-sm text-primary">rule</span>
+<span>Edit Scope & Permission</span>
+</button>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md hover:text-error transition-colors flex items-center gap-1" title="Reset Password">
+<span class="material-symbols-outlined text-body-sm">key_off</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- User 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors bg-surface-container-low/20">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-bold text-label-lg shadow-xs">
+                    AD
+                  </div>
+<div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">Ahmad Dahlan</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ketua RW 01 Dusun Krajan • SK 141/08/2023</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-space-xs py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm font-semibold">
+                  Admin Wilayah (RW)
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1 font-label-md text-label-md text-on-surface font-semibold">
+<span class="material-symbols-outlined text-tertiary text-body-md">maps_home_work</span>
+<span>Dusun I (RW 01: RT 01-05, RW 02: RT 01-04)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-body-sm">lock</span>
+<span>Aktif (2FA TOTP)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-tabular-data text-tabular-data text-on-surface-variant">
+                Hari ini, 08:42 WIB (180.252.12.5)
+              </td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-space-sm py-1 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-body-sm text-primary">rule</span>
+<span>Edit Scope & Permission</span>
+</button>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md hover:text-error transition-colors flex items-center gap-1" title="Reset Password">
+<span class="material-symbols-outlined text-body-sm">key_off</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- User 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-label-lg shadow-xs">
+                    SM
+                  </div>
+<div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">Siti Maryam</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Staff Operator Registrasi • Kontrak Pelayanan</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-space-xs py-1 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+                  Petugas Loket Pelayanan
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1 font-label-md text-label-md text-on-surface font-semibold">
+<span class="material-symbols-outlined text-secondary text-body-md">location_on</span>
+<span>RW 03 Sukatani (RT 01 s/d RT 06)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-body-sm">lock</span>
+<span>Aktif (2FA SMS OTP)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-tabular-data text-tabular-data text-on-surface-variant">
+                Kemarin, 16:15 WIB (114.124.30.12)
+              </td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-space-sm py-1 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-body-sm text-primary">rule</span>
+<span>Edit Scope & Permission</span>
+</button>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md hover:text-error transition-colors flex items-center gap-1" title="Reset Password">
+<span class="material-symbols-outlined text-body-sm">key_off</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Panel Audit Trail Cepat: 3 Log Riwayat Perubahan Terkini -->
+<div class="flex flex-col gap-space-sm bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-headline-sm">history_toggle_off</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Log Audit Cepat: Keamanan & Integritas Data Warga</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Catatan forensik mutasi wewenang dan ekspor NIK sesuai mandat UU PDP</span>
+</div>
+</div>
+<a class="flex items-center gap-1 text-primary font-label-md text-label-md hover:underline font-semibold" href="#" onclick="switchTab(3)">
+<span>Buka Seluruh Audit Trail (2,491 Entri)</span>
+<span class="material-symbols-outlined text-body-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-space-xs">
+<!-- Audit Card 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-sm shadow-2xs hover:shadow-sm transition-shadow">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-bold">
+              MODIFIKASI ROLE
+            </span>
+<span class="font-tabular-data text-body-sm text-on-surface-variant">10 menit lalu</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">Pemberian Akses Approve Persuratan</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Aktor: <span class="font-semibold text-on-surface">Sri Rahayu (Super Admin)</span> mengaktifkan modul antrean surat untuk akun <span class="font-semibold text-on-surface">Ahmad Dahlan (RW 01)</span>.
+          </p>
+</div>
+<div class="pt-space-xs font-tabular-data text-body-sm text-outline-variant flex items-center justify-between">
+<span>IP: 192.168.10.15 (Intranet Desa)</span>
+<span class="material-symbols-outlined text-body-sm text-primary">check_circle</span>
+</div>
+</div>
+<!-- Audit Card 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-sm shadow-2xs hover:shadow-sm transition-shadow">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+              EKSPOR NIK TERPROTEKSI
+            </span>
+<span class="font-tabular-data text-body-sm text-on-surface-variant">42 menit lalu</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">Ekspor Rekap Calon Penerima BLT</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Aktor: <span class="font-semibold text-on-surface">Bambang Sutrisno</span> mengunduh 184 baris NIK bertanda air kriptografis untuk verifikasi Dinas Sosial.
+          </p>
+</div>
+<div class="pt-space-xs font-tabular-data text-body-sm text-outline-variant flex items-center justify-between">
+<span>IP: 103.84.21.90 (Koneksi Aman TLS 1.3)</span>
+<span class="material-symbols-outlined text-body-sm text-primary">verified</span>
+</div>
+</div>
+<!-- Audit Card 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-sm shadow-2xs hover:shadow-sm transition-shadow">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+              BLOCKED ACCESS
+            </span>
+<span class="font-tabular-data text-body-sm text-on-surface-variant">2 jam lalu</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">Penolakan Akses Di Luar Scope RW</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Sistem otomatis memblokir upaya pencarian data NIK Dusun III oleh akun staf yang hanya memiliki lisensi wilayah Dusun I.
+          </p>
+</div>
+<div class="pt-space-xs font-tabular-data text-body-sm text-outline-variant flex items-center justify-between">
+<span>IP: 114.124.30.12 (Akses Ditolak)</span>
+<span class="material-symbols-outlined text-body-sm text-error">gpp_bad</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function switchTab(tabIndex) {
+    // Reset all tabs
+    const tabs = [1, 2, 3];
+    tabs.forEach(i => {
+      const btn = document.getElementById(`tabBtn${i}`);
+      const content = document.getElementById(`tabContent${i}`);
+      
+      if (i === tabIndex) {
+        btn.className = 'flex-1 flex items-center justify-center gap-space-xs py-space-sm px-space-md rounded-lg font-label-lg text-label-lg bg-surface-container-lowest text-on-surface shadow-xs transition-all';
+        content.classList.remove('hidden');
+        content.classList.add('flex');
+      } else {
+        btn.className = 'flex-1 flex items-center justify-center gap-space-xs py-space-sm px-space-md rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all';
+        content.classList.add('hidden');
+        content.classList.remove('flex');
+      }
+    });
+  }
+</script></div></main></div></body></html>
